@@ -38,3 +38,8 @@ sent_mail_ical="#{out_dir}/sent-mail.ics"
 run_cmd "ical-from-sent-email.rb -y #{date.year} -m #{date.mon} -o '#{sent_mail_ical}'"
 
 # the google calendar is setup to sync in iCal if I just refresh it so I don't need to write a script for that
+
+# print out directions for what to do next
+puts "Now clear the existing calendars from ical"
+puts "Then run this command"
+puts "  open #{out_dir}/*.ics"
